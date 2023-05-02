@@ -1,4 +1,4 @@
 FROM  almalinux
-LABEL AUTHOR="NARAYANA" \
+ENV AUTHOR="NARAYANA" \
           COURCE="DOCKER&K8" \
           DURATION="40 HRS"
