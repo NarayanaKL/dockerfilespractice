@@ -16,6 +16,10 @@ docker run -it add:v1(image) we can go directly inside the container
 
 docker rmi -f add:v1 removing the image fourcefully
 
+docker run -it entrypoint:e1
+docker run  entrypoint:e1
+
+
 
 
 
