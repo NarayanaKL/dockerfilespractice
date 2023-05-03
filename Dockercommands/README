@@ -2,6 +2,20 @@ docker images --filter "LABEL=AUTHOR=NARAYANA" -based on filder
 docker run lokanarayana/env:v2 ping -c 4 google.com
 docker run -e DURATION=20HRS lokanarayana/env:v2 env
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"] -to runn infinity time 
 
 docker tag lokanarayana/copy:c1  lokanarayana/smallproject:s1 --taging to local to docker hub
+
+COPY instruction is useful to copy the files from local to image.
+ADD is same as COPY. It is useful to copy files from local to container. But it has 2 extra capabilities.
+
+ADD can download the file directly from internet to the container.
+ADD can untar/unzip the file directly into the container.
+
+docker run -it add:v1(image) we can go directly inside the container
+
+docker rmi -f add:v1 removing the image fourcefully
+
+
+
+
