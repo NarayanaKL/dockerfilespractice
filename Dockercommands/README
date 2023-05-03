@@ -2,3 +2,6 @@ docker images --filter "LABEL=AUTHOR=NARAYANA" -based on filder
 docker run lokanarayana/env:v2 ping -c 4 google.com
 docker run -e DURATION=20HRS lokanarayana/env:v2 env
 
+CMD ["nginx", "-g", "daemon off;"]
+
+docker tag lokanarayana/copy:c1  lokanarayana/smallproject:s1 --taging to local to docker hub
