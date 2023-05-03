@@ -18,6 +18,7 @@ docker rmi -f add:v1 removing the image fourcefully
 
 docker run -it entrypoint:e1
 docker run  entrypoint:e1
+docker ps -a --no-trunc  -- we can see the CMD and Entrypoint data with combained
 
 
 
