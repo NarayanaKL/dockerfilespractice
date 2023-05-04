@@ -1,5 +1,5 @@
 FROM almalinux
 #RUN cd /tmp/
 #RUN touch hell.txt
-WORKDIR /tmp
+WORKDIR /abc
 RUN touch hello.txt
