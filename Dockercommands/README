@@ -23,7 +23,7 @@ docker ps -a --no-trunc  -- we can see the CMD and Entrypoint data with combaine
 docker system prune - to remove all the un used container 
 It is used to run the commands as particular user.
 
-docker run -it user.u1 env
+docker run -it user.u1 env --
 
 
 
