@@ -1,3 +1,3 @@
 FROM almalinux
 RUN cd/tmp/
-RUN touch.txt
+RUN touch hell.txt
