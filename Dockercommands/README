@@ -24,6 +24,15 @@ docker system prune - to remove all the un used container
 It is used to run the commands as particular user.
 
 docker run -it user.u1 env --
+docker rm -f 761658a60d9c -force full stoping the running container
+
+sudo su -    to see the volumes folders..
+ cd /var/lib/docker
+ docker volume create nginx
+docker volume inspect nginx
+
+docker run -d -v nginx:/usr/share/nginx/html -p 80:80 nginx
+
 
 
 
