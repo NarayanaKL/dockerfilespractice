@@ -32,6 +32,11 @@ sudo su -    to see the volumes folders..
 docker volume inspect nginx
 
 docker run -d -v nginx:/usr/share/nginx/html -p 80:80 nginx
+docker run -d -v my-sql:/var/lib/mysql mysql
+docker run -d -v mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root123 mysql
+show batabaes;
+docker ps -a -q - we get only ID's
+docker container ls -all --filter label="Narayana"
 
 
 
