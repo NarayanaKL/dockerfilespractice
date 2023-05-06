@@ -37,8 +37,15 @@ docker run -d -v mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root123 mysql
 show batabaes;
 docker ps -a -q - we get only ID's
 docker container ls -all --filter label="Narayana"
+docker run -d --name mongodb mangodb:db1 --assigningnames
 
 
+
+docker inspect c20b786b1735 | grep -i ip
+ every container has ip address
+ docker network ls
+docker network create roboshop --creating networking 
+ docker network connect roboshop mangodb
 
 
 
